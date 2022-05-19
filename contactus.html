@@ -122,14 +122,129 @@
 				<div class="col-12 col-sm-6 offset-sm-1">
 					<h5>Map of our Location</h5>
 				</div>
-				<div class="col-12 col-sm-11 offset-sm-1">Button group goes here</div>
+				<div class="col-12 col-sm-11 offset-sm-1">
+					<div class="btn-group" role="group" aria-label="Basic example">
+						<button type="button" class="btn btn-success">
+							<i class="fa fa-phone" aria-hidden="true"></i> Call
+						</button>
+						<button type="button" class="btn btn-primary">
+							<i class="fa fa-skype" aria-hidden="true"></i> Skype
+						</button>
+						<button type="button" class="btn btn-info">
+							<i class="fa fa-envelope" aria-hidden="true"></i> Mail
+						</button>
+					</div>
+				</div>
 			</div>
 
 			<div class="row row-content">
 				<div class="col-12">
 					<h3>Send us your Feedback</h3>
+					<form>
+						<div class="form-group row">
+							<label for="first-name-input" class="col-form-label col-sm-2"
+								>First name</label
+							>
+							<div class="col-sm-10">
+								<input
+									type="text"
+									class="form-control"
+									id="first-name-input"
+									placeholder="First name"
+								/>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="last-name-input" class="col-form-label col-sm-2"
+								>Last name</label
+							>
+							<div class="col-sm-10">
+								<input
+									type="text"
+									class="form-control"
+									id="last-name-input"
+									placeholder="Last name"
+								/>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label
+								for="first-name-input"
+								class="col-form-label col-12 col-sm-2"
+								>Contact tel.</label
+							>
+							<div class="col-sm-3">
+								<input
+									type="text"
+									class="form-control"
+									id="area-code-input"
+									placeholder="First name"
+								/>
+							</div>
+							<div class="col-sm-7">
+								<input
+									type="text"
+									class="form-control"
+									id="area-code-input"
+									placeholder="First name"
+								/>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="email-input" class="col-form-label col-sm-2"
+								>Email</label
+							>
+							<div class="col-sm-10">
+								<input
+									type="email"
+									class="form-control"
+									id="email-input"
+									placeholder="Email"
+								/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3 offset-sm-2 col-form-label">
+								<div class="form-check">
+									<input
+										type="checkbox"
+										class="form-check-input"
+										id="accept-contact-input"
+									/>
+									<label class="form-check-label" for="accept-contact-input"
+										>May we contact you?</label
+									>
+								</div>
+							</div>
+
+							<div class="form-group col-2 offset-5">
+								<select class="form-control" id="Tel.">
+									<option>Tel. 1</option>
+									<option>Tel. 2</option>
+									<option>Tel. 3</option>
+									<option>Tel. 4</option>
+									<option>Tel. 5</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="feedback-input" class="col-form-label col-sm-2"
+								>Your feedback</label
+							>
+							<div class="col-10">
+								<textarea
+									class="form-control"
+									id="feedback-input"
+									rows="5"
+								></textarea>
+							</div>
+						</div>
+
+						<button type="submit" class="btn btn-primary offset-2">
+							Submit
+						</button>
+					</form>
 				</div>
-				<div class="col-12 col-md-9">Form goes here</div>
 				<div class="col-12 col-md"></div>
 			</div>
 		</div>
