@@ -13,11 +13,25 @@
 			rel="stylesheet"
 			href="node_modules/bootstrap/dist/css/bootstrap.min.css"
 		/>
+
+		<!-- jQuery first, then Popper.js, then Bootstrap JS. -->
 		<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 		<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-		<link rel="stylesheet" href="./css/aboutus.css" />
+		<!-- Font awesome -->
+		<link
+			rel="stylesheet"
+			href="node_modules/font-awesome/css/font-awesome.min.css"
+		/>
+
+		<!-- Bootstrap social -->
+		<link
+			rel="stylesheet"
+			href="node_modules/bootstrap-social/bootstrap-social.css"
+		/>
+
+		<link rel="stylesheet" href="./css/index.css" />
 	</head>
 
 	<body>
@@ -37,19 +51,26 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
-						<li class="nav-item active">
+						<li class="nav-item">
 							<a class="nav-link" href="./"
-								>Home <span class="sr-only">(current)</span></a
+								><i class="fa fa-home" aria-hidden="true"></i> Home</a
+							>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="./aboutus.html"
+								><i class="fa fa-info" aria-hidden="true"></i> About</a
 							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="./aboutus.html">About</a>
+							<a class="nav-link" href="#"
+								><i class="fa fa-bars" aria-hidden="true"></i> Menu</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Menu</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contact</a>
+							<a class="nav-link" href="./contactus.html"
+								><i class="fa fa-address-card-o" aria-hidden="true"></i>
+								Contact</a
+							>
 						</li>
 					</ul>
 				</div>
@@ -74,7 +95,7 @@
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><a href="./">Home</a></li>
-					<li class="breadcrumb-item active" aria-current="page">About us</li>
+					<li class="breadcrumb-item active" aria-current="page">About Us</li>
 				</ol>
 			</nav>
 
@@ -158,7 +179,7 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-4 offset-1 col-sm-2">
+					<div class="col-4 col-sm-2">
 						<h5>Links</h5>
 						<ul class="list-unstyled">
 							<li><a href="#">Home</a></li>
@@ -170,22 +191,53 @@
 					<div class="col-7 col-sm-5">
 						<h5>Our Address</h5>
 						<address>
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
 							121, Clear Water Bay Road<br />
 							Clear Water Bay, Kowloon<br />
 							HONG KONG<br />
+							<i class="fa fa-phone" aria-hidden="true"></i>
 							Tel.: +852 1234 5678<br />
+							<i class="fa fa-fax" aria-hidden="true"></i>
 							Fax: +852 8765 4321<br />
+							<i class="fa fa-envelope-o" aria-hidden="true"></i>
 							Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
 						</address>
 					</div>
 					<div class="col-12 col-sm-4 align-self-center">
 						<div class="text-center">
-							<a href="http://google.com/+">Google+</a>
-							<a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-							<a href="http://www.linkedin.com/in/">LinkedIn</a>
-							<a href="http://twitter.com/">Twitter</a>
-							<a href="http://youtube.com/">YouTube</a>
-							<a href="mailto:">Mail</a>
+							<a
+								class="btn btn-social-icon btn-google"
+								href="https://www.google.com/+"
+							>
+								<i class="fa fa-google-plus"></i>
+							</a>
+							<a
+								class="btn btn-social-icon btn-facebook"
+								href="https://www.facebook.com/"
+							>
+								<i class="fa fa-facebook"></i>
+							</a>
+							<a
+								class="btn btn-social-icon btn-linkedin"
+								href="https://www.linkedin.com/"
+							>
+								<i class="fa fa-linkedin"></i>
+							</a>
+							<a
+								class="btn btn-social-icon btn-twitter"
+								href="https://www.twitter.com/"
+							>
+								<i class="fa fa-twitter"></i>
+							</a>
+							<a
+								class="btn btn-social-icon btn-google"
+								href="https://www.youtube.com/"
+							>
+								<i class="fa fa-youtube"></i>
+							</a>
+							<a class="btn btn-social-icon" href="mailto:">
+								<i class="fa fa-envelope"></i>
+							</a>
 						</div>
 					</div>
 				</div>
