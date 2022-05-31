@@ -32,6 +32,12 @@
 		/>
 
 		<link rel="stylesheet" href="./css/index.css" />
+
+		<script>
+			$(document).ready(function () {
+				$('[data-toggle="tooltip"]').tooltip();
+			});
+		</script>
 	</head>
 
 	<body>
@@ -74,9 +80,78 @@
 								Contact</a
 							>
 						</li>
+						<li class="nav-item">
+							<a
+								href=""
+								class="navbar-text"
+								data-toggle="modal"
+								data-target="#loginModal"
+								><span class="fa fa-sign-in"></span>Login</a
+							>
+						</li>
 					</ul>
 				</div>
 			</nav>
+
+			<div id="loginModal" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-lg" role="content">
+					<!-- Modal content -->
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Login</h4>
+							<button type="button" class="close" data-dismiss="modal">
+								&times;
+							</button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="form-row">
+									<div class="form-group col-sm-4">
+										<label class="sr-only" for="exampleInputEmail3"
+											>Email address</label
+										>
+										<input
+											type="email"
+											class="form-control form-control-sm ar-1"
+											id="exampleInputEmail3"
+											placeholder="Enter email"
+										/>
+									</div>
+									<div class="form-group col-sm-4">
+										<label class="sr-only" for="exampleInputPassword3"
+											>Password</label
+										>
+										<input
+											type="password"
+											class="form-control form-control-sm mr-1"
+											id="exampleInputPassword3"
+											placeholder="Password"
+										/>
+									</div>
+									<div class="col-sm-auto">
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" />
+											<label class="form-check-label"> Remember me </label>
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<button
+										type="button"
+										class="btn btn-secondary btn-sm ml-auto"
+										data-dismiss="modal"
+									>
+										Cancel
+									</button>
+									<button type="submit" class="btn btn-primary btn-sm ml-1">
+										Sign in
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			<div class="container">
 				<div class="row row-header">
@@ -95,6 +170,18 @@
 					</div>
 				</div>
 			</div>
+
+			<a
+				role="button"
+				class="btn btn-warning btn-block nav-link"
+				data-toggle="tooltip"
+				data-html="true"
+				title="Or Call us at +82 12345678"
+				data-placement="bottom"
+				href="#reverseform"
+			>
+				Reverse Table
+			</a>
 		</header>
 
 		<div class="container">
@@ -220,7 +307,7 @@
 						</div>
 					</div>
 
-					<ul class="nav nav-tabs">
+					<!-- <ul class="nav nav-tabs">
 						<li class="nav-item">
 							<a
 								href="#peter"
@@ -321,6 +408,127 @@
 									you get a winning hit! Amma Mia!</em
 								>
 							</p>
+						</div>
+					</div> -->
+
+					<div class="accordion">
+						<div class="card">
+							<div class="card-header" id="peter">
+								<a data-toggle="collapse" data-target="#peterCollapse"
+									><h3>Peter Pan <small>Chief Epicurious Officer</small></h3></a
+								>
+							</div>
+
+							<div
+								id="peterCollapse"
+								class="collapse show"
+								aria-labelledby="peter"
+								data-parent="#peter"
+							>
+								<div class="card-body">
+									<p>
+										Our CEO, Peter, credits his hardworking East Asian immigrant
+										parents who undertook the arduous journey to the shores of
+										America with the intention of giving their children the best
+										future. His mother's wizardy in the kitchen whipping up the
+										tastiest dishes with whatever is available inexpensively at
+										the supermarket, was his first inspiration to create the
+										fusion cuisines for which
+										<em>The Frying Pan</em> became well known. He brings his
+										zeal for fusion cuisines to this restaurant, pioneering
+										cross-cultural culinary connections.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="danny">
+								<a data-toggle="collapse" data-target="#dannyCollapse"
+									><h3>
+										Dhanasekaran Witherspoon <small>Chief Food Officer</small>
+									</h3></a
+								>
+							</div>
+
+							<div
+								id="dannyCollapse"
+								class="collapse"
+								aria-labelledby="headingOne"
+								data-parent="#accordionExample"
+							>
+								<div class="card-body">
+									<p>
+										Our CEO, Peter, credits his hardworking East Asian immigrant
+										parents who undertook the arduous journey to the shores of
+										America with the intention of giving their children the best
+										future. His mother's wizardy in the kitchen whipping up the
+										tastiest dishes with whatever is available inexpensively at
+										the supermarket, was his first inspiration to create the
+										fusion cuisines for which
+										<em>The Frying Pan</em> became well known. He brings his
+										zeal for fusion cuisines to this restaurant, pioneering
+										cross-cultural culinary connections.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingOne">
+								<a data-toggle="collapse" data-target="#agumbeCollapse"
+									><h3>Agumbe Tang <small>Chief Taste Officer</small></h3></a
+								>
+							</div>
+
+							<div
+								id="agumbeCollapse"
+								class="collapse"
+								aria-labelledby="headingOne"
+								data-parent="#agumbe"
+							>
+								<div class="card-body">
+									<p>
+										Our CEO, Peter, credits his hardworking East Asian immigrant
+										parents who undertook the arduous journey to the shores of
+										America with the intention of giving their children the best
+										future. His mother's wizardy in the kitchen whipping up the
+										tastiest dishes with whatever is available inexpensively at
+										the supermarket, was his first inspiration to create the
+										fusion cuisines for which
+										<em>The Frying Pan</em> became well known. He brings his
+										zeal for fusion cuisines to this restaurant, pioneering
+										cross-cultural culinary connections.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingOne">
+								<a data-toggle="collapse" data-target="#albertoCollapse"
+									><h3>Alberto Somayya <small>Executive Chef</small></h3></a
+								>
+							</div>
+
+							<div
+								id="albertoCollapse"
+								class="collapse"
+								aria-labelledby="headingOne"
+								data-parent="#alberto"
+							>
+								<div class="card-body">
+									<p>
+										Our CEO, Peter, credits his hardworking East Asian immigrant
+										parents who undertook the arduous journey to the shores of
+										America with the intention of giving their children the best
+										future. His mother's wizardy in the kitchen whipping up the
+										tastiest dishes with whatever is available inexpensively at
+										the supermarket, was his first inspiration to create the
+										fusion cuisines for which
+										<em>The Frying Pan</em> became well known. He brings his
+										zeal for fusion cuisines to this restaurant, pioneering
+										cross-cultural culinary connections.
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
