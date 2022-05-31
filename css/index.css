@@ -39,3 +39,17 @@ address {
 	border-bottom: 1px solid #ddd;
 	padding: 10px;
 }
+
+.carousel {
+	background: #512da8;
+}
+
+.carousel-item {
+	height: 560px;
+}
+
+.carousel-item img {
+	width: 80%;
+	min-height: 100%;
+	margin: auto;
+}
