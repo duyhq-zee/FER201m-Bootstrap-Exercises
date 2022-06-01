@@ -63,4 +63,16 @@ body {
   z-index: 1;
 }
 
+.modal {
+  border-radius: 16px;
+}
+.modal .modal-header {
+  font-weight: bold;
+  color: #fff;
+  background-color: #512da8;
+}
+.modal .modal-body {
+  background-color: #d1c4e9;
+}
+
 /*# sourceMappingURL=index.css.map */

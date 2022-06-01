@@ -38,6 +38,22 @@
 				$('[data-toggle="tooltip"]').tooltip();
 			});
 		</script>
+
+		<script>
+			$(document).ready(function () {
+				$("#reserve-btn").click(function () {
+					$("#reserve-form").modal("toggle");
+				});
+			});
+		</script>
+
+		<script>
+			$(document).ready(function () {
+				$("#login-btn").click(function () {
+					$("#login-form").modal("toggle");
+				});
+			});
+		</script>
 	</head>
 
 	<body>
@@ -81,11 +97,7 @@
 							>
 						</li>
 						<li class="nav-item">
-							<a
-								href=""
-								class="navbar-text"
-								data-toggle="modal"
-								data-target="#loginModal"
+							<a href="#" class="navbar-text" id="login-btn"
 								><span class="fa fa-sign-in"></span>Login</a
 							>
 						</li>
@@ -93,7 +105,7 @@
 				</div>
 			</nav>
 
-			<div id="loginModal" class="modal fade" role="dialog">
+			<div id="login-form" class="modal fade" role="dialog">
 				<div class="modal-dialog modal-lg" role="content">
 					<!-- Modal content -->
 					<div class="modal-content">

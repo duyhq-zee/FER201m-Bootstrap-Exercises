@@ -73,3 +73,14 @@ body {
 		z-index: 1;
 	}
 }
+
+.modal {
+	.modal-header {
+		font-weight: bold;
+		color: #fff;
+		background-color: $background-dark;
+	}
+	.modal-body {
+		background-color: $background-pale;
+	}
+}
