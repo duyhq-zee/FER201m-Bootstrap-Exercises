@@ -232,7 +232,9 @@
 			</div>
 
 			<div class="container mt-4">
-				<div class="row row-header d-flex align-items-center">
+				<div
+					class="row row-header d-flex align-items-center justify-content-center"
+				>
 					<div class="col-12 col-sm-6">
 						<h1>Ristorante con Fusion</h1>
 						<p>
@@ -241,23 +243,134 @@
 							your culinary senses!
 						</p>
 					</div>
-					<div class="col-12 col-sm align-self-center">
+					<div
+						class="col-12 col-sm-4 align-self-center d-flex justify-content-center"
+					>
 						<img src="./img/logo.png" alt="" class="img-fluid" />
 					</div>
 					<a
 						role="button"
-						class="btn btn-warning btn-block nav-link col-2"
-						data-toggle="tooltip"
+						class="btn btn-warning btn-block nav-link col-12 col-sm-2"
+						style="white-space: normal"
+						data-toggle="modal"
+						data-target="#reserve-form"
 						data-html="true"
-						title="Or Call us at +82 12345678"
 						data-placement="bottom"
-						href="#reserveform"
+						href="#reserve-form"
 					>
 						Reserve Table
 					</a>
 				</div>
 			</div>
 		</header>
+
+		<div
+			class="modal fade p-0"
+			id="reserve-form"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header bg-warning">
+						<h3>Reserve table</h3>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form action="" class="container">
+							<div class="form-group row mb-3">
+								<label for="" class="col-12 col-lg-3 p-0 pr-2"
+									>Number of Guests</label
+								>
+								<div class="col-12 col-lg-9 p-0">
+									<input type="radio" name="" id="nog1" />
+									<label class="mr-3" for="nog1">1</label>
+									<input type="radio" name="" id="nog2" />
+									<label class="mr-3" for="nog2">2</label>
+									<input type="radio" name="" id="nog3" />
+									<label class="mr-3" for="nog3">3</label>
+									<!-- <input type="radio" name="" id="nog4" />
+									<label class="mr-3" for="nog4">4</label>
+									<input type="radio" name="" id="nog5" />
+									<label class="mr-3" for="nog5">5</label>
+									<input type="radio" name="" id="nog6" />
+									<label class="mr-3" for="nog6">6</label> -->
+								</div>
+							</div>
+
+							<div class="form-group row mb-3">
+								<label for="" class="col-12 col-lg-3 p-0 pr-2"
+									>Date and Time</label
+								>
+								<div class="row col-12 col-lg-9">
+									<input
+										class="form-control d-inline-block mr-2 col-12 col-lg-5"
+										type="text"
+										placeholder="Date"
+										name="date"
+										style="width: 40%"
+									/>
+									<input
+										class="form-control d-inline-block col-12 col-lg-5"
+										type="text"
+										placeholder="Time"
+										name="time"
+									/>
+								</div>
+							</div>
+
+							<div class="form-group row mb-3">
+								<label for="" class="col-12 col-lg-3 p-0 pr-2">Section</label>
+								<div class="row col-12 col-lg-9">
+									<div class="btn-group btn-group-toggle" data-toggle="buttons">
+										<label class="btn btn-success active">
+											<input
+												type="radio"
+												name="smoking"
+												id="option1"
+												autocomplete="off"
+												checked
+											/>
+											Non-smoking
+										</label>
+										<label class="btn btn-danger">
+											<input
+												type="radio"
+												name="smoking"
+												id="option2"
+												autocomplete="off"
+											/>
+											Smoking
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<button
+									href="#"
+									class="btn btn-secondary offset-3 mr-2"
+									data-dismiss="modal"
+									aria-label="Close"
+								>
+									Cancel
+								</button>
+								<button href="#" class="btn btn-primary">Reserve</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<div class="container">
 			<nav aria-label="breadcrumb">
