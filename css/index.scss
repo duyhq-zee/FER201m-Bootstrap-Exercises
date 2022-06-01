@@ -79,6 +79,9 @@ body {
 		font-weight: bold;
 		color: #fff;
 		background-color: $background-dark;
+		button.close {
+			color: floralwhite;
+		}
 	}
 	.modal-body {
 		background-color: $background-pale;

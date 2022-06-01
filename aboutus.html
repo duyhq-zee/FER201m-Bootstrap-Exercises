@@ -33,11 +33,11 @@
 
 		<link rel="stylesheet" href="./css/index.css" />
 
-		<script>
+		<!-- <script>
 			$(document).ready(function () {
 				$('[data-toggle="tooltip"]').tooltip();
 			});
-		</script>
+		</script> -->
 
 		<script>
 			$(document).ready(function () {
@@ -105,17 +105,17 @@
 				</div>
 			</nav>
 
-			<div id="login-form" class="modal fade" role="dialog">
+			<div id="login-form" class="modal fade border-0" role="dialog">
 				<div class="modal-dialog modal-lg" role="content">
 					<!-- Modal content -->
-					<div class="modal-content">
-						<div class="modal-header">
+					<div class="modal-content border-0">
+						<div class="modal-header border-0">
 							<h4 class="modal-title">Login</h4>
 							<button type="button" class="close" data-dismiss="modal">
 								&times;
 							</button>
 						</div>
-						<div class="modal-body">
+						<div class="modal-body border-0">
 							<form>
 								<div class="form-row">
 									<div class="form-group col-sm-4">
@@ -143,7 +143,9 @@
 									<div class="col-sm-auto">
 										<div class="form-check">
 											<input class="form-check-input" type="checkbox" />
-											<label class="form-check-label"> Remember me </label>
+											<label class="form-check-label text-dark">
+												Remember me
+											</label>
 										</div>
 									</div>
 								</div>
@@ -277,7 +279,7 @@
 		</header>
 
 		<div
-			class="modal fade p-0"
+			class="modal fade border-0"
 			id="reserve-form"
 			tabindex="-1"
 			role="dialog"
@@ -286,7 +288,7 @@
 		>
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
-					<div class="modal-header bg-warning">
+					<div class="modal-header border-0">
 						<h3>Reserve table</h3>
 						<button
 							type="button"
@@ -297,7 +299,7 @@
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
-					<div class="modal-body">
+					<div class="modal-body border-0">
 						<form action="" class="container">
 							<div class="form-group row mb-3">
 								<label for="" class="col-12 col-lg-3 p-0 pr-2"
@@ -316,27 +318,6 @@
 									<label class="mr-3" for="nog5">5</label>
 									<input type="radio" name="" id="nog6" />
 									<label class="mr-3" for="nog6">6</label> -->
-								</div>
-							</div>
-
-							<div class="form-group row mb-3">
-								<label for="" class="col-12 col-lg-3 p-0 pr-2"
-									>Date and Time</label
-								>
-								<div class="row col-12 col-lg-9">
-									<input
-										class="form-control d-inline-block mr-2 col-12 col-lg-5"
-										type="text"
-										placeholder="Date"
-										name="date"
-										style="width: 40%"
-									/>
-									<input
-										class="form-control d-inline-block col-12 col-lg-5"
-										type="text"
-										placeholder="Time"
-										name="time"
-									/>
 								</div>
 							</div>
 
@@ -363,6 +344,29 @@
 											/>
 											Smoking
 										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group row mb-3">
+								<label for="" class="col-12 col-lg-3 p-0 pr-2"
+									>Date and Time</label
+								>
+								<div class="row col-12 col-lg-9">
+									<div class="d-flex align-items-center">
+										<input
+											class="form-control d-inline-block mr-2 col-12 col-lg-5"
+											type="text"
+											placeholder="Date"
+											name="date"
+											style="width: 40%"
+										/>
+										<input
+											class="form-control d-inline-block col-12 col-lg-5"
+											type="text"
+											placeholder="Time"
+											name="time"
+										/>
 									</div>
 								</div>
 							</div>
