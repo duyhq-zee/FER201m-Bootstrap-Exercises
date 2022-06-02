@@ -26,7 +26,7 @@ $carousel-item-height: 300px;
 }
 
 .jumbotron {
-	@include zero-margin(70px, 30px);
+	@include zero-margin(30px, 30px);
 	background-color: $background-light;
 	color: floralwhite;
 }
@@ -89,5 +89,13 @@ body {
 	}
 	.modal-body {
 		background-color: $background-pale;
+	}
+}
+
+.accordion {
+	.card-header {
+		a {
+			cursor: pointer;
+		}
 	}
 }
